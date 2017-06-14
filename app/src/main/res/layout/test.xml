@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="handler"
+            type="com.example.mohan.unittesting.MainActivity"/>
+    </data>
+
+
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:myAdapter="@{handler.myData}"
+       >
+
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+   <!-- <com.example.mohan.unittesting.DoubleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mohan "
+        android:spacing="5"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@mipmap/ic_launcher"
+        android:drawableLeft="@mipmap/ic_launcher"/>-->
+
+</RelativeLayout>
+</layout>
